@@ -46,7 +46,7 @@
         <div class="container">
             <a href="#"><img src="img/Favoritos.svg" alt="Meus Favoritos" class="container__imagem"></a>
             <a href="#"><img src="img/Compras.svg" alt="Carrinhos de Compras" class="container__imagem"></a>
-            <a href="#"><img src="img/Usuario.png" alt="Meu perfil" class="container__imagem"></a>
+            <a href="#"><img src="img/Usuário.svg" alt="Meu perfil" class="container__imagem"></a>
         </div>
     </header>
     <section class="banner">
@@ -55,14 +55,41 @@
             tecnolgia de ponta!</p>
         <input type="search" class="banner__pesquisa" placeholder="Pesquise cases de sucesso">
     </section>
+    <section class="carrosel">
+        <h2 class="carrosel__titulo">Galeria de projetos</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="img/Nodejs.svg" alt="Node"></div>
+                <div class="swiper-slide"><img src="img/Tuning.svg" alt="Tuning"></div>
+                <div class="swiper-slide"><img src="img/Liderança.svg" alt="Liderança"></div>
+                <div class="swiper-slide"><img src="img/Javascript.svg" alt="Javascript"></div>
+                <div class="swiper-slide"><img src="img/Construct2.svg" alt="Construct2"></div>
+                ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
 
-    <Main>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
 
-    </Main>
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </section>
 
-    <footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
 
-    </footer>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPewView: 3,
+        })
+    </script>
 
 </body>
 
