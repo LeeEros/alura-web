@@ -53,7 +53,7 @@
     <section class="banner">
         <h2 class="banner__titulo">A primeira empresa Júnior do IFPR!</h2>
         <p class="banner_texto"> Forcetech Júnior Soluções! Desenvolvimento de Sistemas, Web e diversas aplicações com
-            tecnolgia de ponta!</p>
+            tecnologias de ponta!</p>
         <input type="search" class="banner__pesquisa" placeholder="Pesquise cases de sucesso">
     </section>
     <section class="carrosel">
@@ -68,6 +68,10 @@
                 <div class="swiper-slide"><img src="img/Liderança.svg" alt="Liderança"></div>
                 <div class="swiper-slide"><img src="img/Javascript.svg" alt="Javascript"></div>
                 <div class="swiper-slide"><img src="img/Construct2.svg" alt="Construct2"></div>
+                <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="ApacheKafka"></div>
+                <div class="swiper-slide"><img src="img/MetricasAgeis.svg" alt="MetricasAgeis"></div>
+                <div class="swiper-slide"><img src="img/Portugol.svg" alt="Portugol"></div>
+                <div class="swiper-slide"><img src="img/UX.svg" alt="UX"></div>
                 ...
             </div>
             <!-- If we need pagination -->
@@ -76,9 +80,6 @@
             <!-- If we need navigation buttons -->
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
-
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
         </div>
     </section>
 
@@ -87,6 +88,10 @@
         const swiper = new Swiper('.swiper', {
             spaceBetween: 10,
             slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            }
         });
     </script>
 
